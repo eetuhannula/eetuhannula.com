@@ -95,7 +95,8 @@ body {
 
 
 .content {
-    min-height: 75vh;
+    /* min-height: 75vh;
+    min-height: 60svh; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -136,6 +137,11 @@ body {
     height: 6rem;
     background-color: #5C7F6B;
     font-family: monospace, sans-serif;
+}
+
+#index-footer {
+    position: absolute;
+    bottom: 0;
 }
 .footer h3 {
     text-align: center;
