@@ -169,11 +169,6 @@ body {
   padding: 0;
   color: #ffffff;
 }
-.footer table p {
-  margin: 0.25rem;
-  padding: 0;
-  color: #000000;
-}
 .footer a:link, .footer a:visited {
   background-color: #893439;
   color: #ffffff;
