@@ -91,27 +91,37 @@ body {
 }
 
 .header {
+  display: flex;
+  align-items: center;
   height: 5rem;
   padding-left: 5rem;
   background-color: #F0E2C8;
 }
+.header h1 {
+  font-size: 1.5rem;
+}
 
 .content {
-  /* min-height: 75vh;
-  min-height: 60svh; */
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #F0E2C8;
 }
 
 .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: #893439;
   color: #ffffff;
   margin: 0.5rem;
   padding: 1rem;
   border-radius: 1.5rem;
+  max-width: 20rem;
+}
+.card img {
+  height: 5rem;
 }
 
 .introduction {
@@ -124,6 +134,22 @@ body {
   color: #ffffff;
   font-family: monospace;
   margin: 0 0 0.5rem 0;
+}
+
+.webdev-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.webdev-icons img {
+  height: 4rem;
+  padding: 1rem;
+}
+
+#apache-logo {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem 0 0.5rem;
 }
 
 #index-footer {
