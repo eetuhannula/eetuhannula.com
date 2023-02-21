@@ -119,7 +119,7 @@ body {
 }
 
 .card {
-    @include flex(column);
+    @include flex(center, center, column);
     background-color: $altBgColor;
     color: $textLight;
     margin: 0.5rem;
@@ -130,6 +130,11 @@ body {
         height: 5rem;
     }
 }
+
+.card-wrapper {
+    @include flexCenter();
+}
+
 .introduction {
     background-color: $altBgColor;
     margin: 0.5rem;
@@ -138,13 +143,11 @@ body {
 
     p {
         color: $textLight;
-        font-family: monospace;
         margin: 0 0 0.5rem 0;
     }
 }
 
 .webdev-icons {
-    @include flexCenter();
     img {
         height: 4rem;
         padding: 1rem;
@@ -158,9 +161,6 @@ body {
 }
 
 
-
-
-
 // FOOTER
 #index-footer {
     position: absolute;
@@ -168,20 +168,13 @@ body {
 }
 
 .footer {
-    margin: 1rem;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 6rem;
+    @include flex(center, center, row);
     background-color: $mainBgColor;
-    font-family: monospace, sans-serif;
 
     h3 {
         text-align: center;
         padding: 0;
-        color: $textDark;
+        color: $textLight;
     }
 
     table p {

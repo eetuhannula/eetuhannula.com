@@ -124,6 +124,12 @@ body {
   height: 5rem;
 }
 
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .introduction {
   background-color: #893439;
   margin: 0.5rem;
@@ -132,15 +138,9 @@ body {
 }
 .introduction p {
   color: #ffffff;
-  font-family: monospace;
   margin: 0 0 0.5rem 0;
 }
 
-.webdev-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .webdev-icons img {
   height: 4rem;
   padding: 1rem;
@@ -158,20 +158,16 @@ body {
 }
 
 .footer {
-  margin: 1rem;
-  padding: 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 6rem;
+  flex-direction: row;
   background-color: #F0E2C8;
-  font-family: monospace, sans-serif;
 }
 .footer h3 {
   text-align: center;
   padding: 0;
-  color: #000000;
+  color: #ffffff;
 }
 .footer table p {
   margin: 0.25rem;
