@@ -1,3 +1,6 @@
+@import './colors';
+@import './mixin';
+
 * {
     margin: 0;
     padding: 0;
@@ -5,11 +8,10 @@
 }
 
 body {
-    background-color: #5C7F6B;
+    background-color: $mainBgColor;
 }
 
-/* ----- MENU ----- */
-
+// MENU
 #menu {
     position: fixed;
     top: 0;
@@ -20,13 +22,11 @@ body {
 }
 
 .menu-box {
+    @include flexCenter();
     width: 3rem;
     height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    background-color: #582117;
+    background-color: $menuBgColor;
     border-radius: 20px;
 
     transform: rotate(0deg);
@@ -58,19 +58,31 @@ body {
 
     display: flex;
     border-radius: 100px;
-    background-color:#582117;
+    background-color: $menuItemColor;
 
     transform: translateX(-49%) translateY(50%) scale(0);
     transform-origin: center;
     transition: 0.5s;
+
+    a {
+        margin: 0 5px;
+        text-decoration: none;
+        color: $textLight;
+        &:hover {
+            color: $textHighlight;
+        }
+    }
+
+    
+}
+#aboutPDF {
+    color: $textDark;
+    &:hover {
+        color: $textHighlight;
+    }
 }
 
-.menu-items a {
-    margin: 0 5px;
-    text-decoration: none;
-    color: white;
-}
-
+// MENU BUTTON CLICKED -> MENU ITEMS APPEAR
 .menu-button:checked ~ .menu-items{
     transform: translateX(0.5rem) translateY(80%) scale(1);
     border-radius: 0 20px 20px 20px;
@@ -86,15 +98,14 @@ body {
 }
 
 
-/* ----- HEADER ------ */
+// HEADER
 .header {
     height: 5rem;
-    background-color:#5C7F6B;
+    padding-left: 5rem;
+    background-color:$mainBgColor;
 }
 
-/*  ----- CONTENT ----- */
-
-
+// CONTENT
 .content {
     /* min-height: 75vh;
     min-height: 60svh; */
@@ -102,32 +113,39 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #5C7F6B;
+    background-color: $mainBgColor;
 }
 
 .card {
-    background-color: #582117;
-    color: #ffffff;
+    background-color: $altBgColor;
+    color: $textLight;
     margin: 0.5rem;
     padding: 1rem;
     border-radius: 1.5rem;
 }
 .introduction {
-    background-color: #582117;
+    background-color: $altBgColor;
     margin: 0.5rem;
     padding: 1rem;
     border-radius: 1.5rem;
+
+    p {
+        color: $textLight;
+        font-family: monospace;
+        margin: 0 0 0.5rem 0;
+    }
 }
 
-.introduction p {
-    color: #ffffff;
-    font-family: monospace;
-    margin: 0 0 0.5rem 0;
+
+
+
+
+// FOOTER
+#index-footer {
+    position: absolute;
+    bottom: 0;
 }
 
-
-
-/* ----- FOOTER  ----- */
 .footer {
     margin: 1rem;
     padding: 0;
@@ -136,36 +154,30 @@ body {
     justify-content: center;
     align-items: center;
     height: 6rem;
-    background-color: #5C7F6B;
+    background-color: $mainBgColor;
     font-family: monospace, sans-serif;
-}
 
-#index-footer {
-    position: absolute;
-    bottom: 0;
-}
-.footer h3 {
-    text-align: center;
-    padding: 0;
-    color: #ffffff;
-}
+    h3 {
+        text-align: center;
+        padding: 0;
+        color: $textDark;
+    }
 
+    table p {
+        margin: 0.25rem;
+        padding: 0;
+        color: $textDark;
+    }
+    
+    a:link, a:visited {
+        background-color: $altBgColor;
+        color: $textLight;
+        padding: 0.25rem 0.5rem;
+        text-decoration: none;
+        border-radius: 0.5rem;
+    }
 
-.footer table p {
-    margin: 0.25rem;
-    padding: 0;
-    color: #ffffff;
+    a:hover {
+        color: $textHighlight;
+    }
 }
-
-.footer a:link, a:visited {
-    background-color: #582117;
-    color: #FFFDEE;
-    padding: 0.25rem 0.5rem;
-    text-decoration: none;
-    border-radius: 0.5rem;
-}
-
-.footer a:hover {
-    color: hotpink;
-}
-

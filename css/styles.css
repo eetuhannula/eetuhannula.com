@@ -5,10 +5,9 @@
 }
 
 body {
-  background-color: #5C7F6B;
+  background-color: #F0E2C8;
 }
 
-/* ----- MENU ----- */
 #menu {
   position: fixed;
   top: 0;
@@ -19,12 +18,12 @@ body {
 }
 
 .menu-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 3rem;
   height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #582117;
+  background-color: #131D29;
   border-radius: 20px;
   transform: rotate(0deg);
   transition: 1s;
@@ -54,16 +53,25 @@ body {
   opacity: 1;
   display: flex;
   border-radius: 100px;
-  background-color: #582117;
+  background-color: #9AADA7;
   transform: translateX(-49%) translateY(50%) scale(0);
   transform-origin: center;
   transition: 0.5s;
 }
-
 .menu-items a {
   margin: 0 5px;
   text-decoration: none;
-  color: white;
+  color: #ffffff;
+}
+.menu-items a:hover {
+  color: hotpink;
+}
+
+#aboutPDF {
+  color: #000000;
+}
+#aboutPDF:hover {
+  color: hotpink;
 }
 
 .menu-button:checked ~ .menu-items {
@@ -82,13 +90,12 @@ body {
   transition: 0.3s;
 }
 
-/* ----- HEADER ------ */
 .header {
   height: 5rem;
-  background-color: #5C7F6B;
+  padding-left: 5rem;
+  background-color: #F0E2C8;
 }
 
-/*  ----- CONTENT ----- */
 .content {
   /* min-height: 75vh;
   min-height: 60svh; */
@@ -96,11 +103,11 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #5C7F6B;
+  background-color: #F0E2C8;
 }
 
 .card {
-  background-color: #582117;
+  background-color: #893439;
   color: #ffffff;
   margin: 0.5rem;
   padding: 1rem;
@@ -108,19 +115,22 @@ body {
 }
 
 .introduction {
-  background-color: #582117;
+  background-color: #893439;
   margin: 0.5rem;
   padding: 1rem;
   border-radius: 1.5rem;
 }
-
 .introduction p {
   color: #ffffff;
   font-family: monospace;
   margin: 0 0 0.5rem 0;
 }
 
-/* ----- FOOTER  ----- */
+#index-footer {
+  position: absolute;
+  bottom: 0;
+}
+
 .footer {
   margin: 1rem;
   padding: 0;
@@ -129,35 +139,26 @@ body {
   justify-content: center;
   align-items: center;
   height: 6rem;
-  background-color: #5C7F6B;
+  background-color: #F0E2C8;
   font-family: monospace, sans-serif;
 }
-
-#index-footer {
-  position: absolute;
-  bottom: 0;
-}
-
 .footer h3 {
   text-align: center;
   padding: 0;
-  color: #ffffff;
+  color: #000000;
 }
-
 .footer table p {
   margin: 0.25rem;
   padding: 0;
-  color: #ffffff;
+  color: #000000;
 }
-
-.footer a:link, a:visited {
-  background-color: #582117;
-  color: #FFFDEE;
+.footer a:link, .footer a:visited {
+  background-color: #893439;
+  color: #ffffff;
   padding: 0.25rem 0.5rem;
   text-decoration: none;
   border-radius: 0.5rem;
 }
-
 .footer a:hover {
   color: hotpink;
 }/*# sourceMappingURL=styles.css.map */
