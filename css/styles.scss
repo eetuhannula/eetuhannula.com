@@ -57,10 +57,11 @@ body {
     opacity: 1;
 
     display: flex;
+    flex-direction: column;
     border-radius: 100px;
     background-color: $menuItemColor;
 
-    transform: translateX(-49%) translateY(50%) scale(0);
+    transform: translateX(-49%) translateY(20%) scale(0);
     transform-origin: center;
     transition: 0.5s;
 
@@ -85,7 +86,7 @@ body {
 
 // MENU BUTTON CLICKED -> MENU ITEMS APPEAR
 .menu-button:checked ~ .menu-items{
-    transform: translateX(0.5rem) translateY(80%) scale(1);
+    transform: translateX(0.5rem) translateY(50%) scale(1);
     border-radius: 0 20px 20px 20px;
     opacity: 1;
 }
