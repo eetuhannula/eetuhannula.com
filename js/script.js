@@ -1,26 +1,48 @@
-// Menu overlay on click (NOT IN USE, IMPLEMENTED BETTER TO MY LIKING WITH PURE CSS)
-var menustate = false; 
-const menu = document.getElementById('menu-overlay');
-const menubutton = document.getElementById('navigation-button');
-
-function menuClick() {
- 
-    if (menustate == false) {
-        menu.style.top = "0";
-        menu.style.left = "0";
-        menu.style.opacity = "1";
-        menu.style.transform = "rotate(360deg)";
-
-        menustate = true;
-    }
-    else if (menustate == true) {
-        menu.style.top = "-100%";
-        menu.style.left = "-100%";
-        menu.style.opacity = "0";
-        menu.style.transform = "rotate(0deg)";
-        
-        menustate = false;
-    }
-    
-    
+// UTILITIES
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+
+// Blinking "_"
+const blink = document.getElementById('blinking_');
+
+async function blinking_() {
+    while(true) {
+        blink.innerHTML = "_"
+        await sleep(600)
+        blink.innerHTML = ""
+        await sleep(600)
+    }
+}
+
+// Typewriting text element from element id
+async function typeTextElement(elementID) {
+    const text = document.getElementById(elementID).textContent
+    let textElement = document.getElementById(elementID)
+    let tempText = ""
+
+    for(let i in text){
+        tempText += text[i]
+        textElement.innerHTML = tempText
+        await sleep(300)
+    }
+}
+
+// Typewriting text element from element class
+async function typeTextElementByClass(elementClass) {
+    const text = document.getElementsByClassName(elementClass)[0].innerHTML
+    let textElement = document.getElementsByClassName(elementClass)
+    let tempText = ""
+
+    for(let i in text){
+        tempText += text[i]
+        textElement[0].innerHTML = tempText
+        await sleep(100)
+    }
+}
+
+// RUN //
+blinking_()
+typeTextElement('site-location')
+typeTextElementByClass('hellothere')

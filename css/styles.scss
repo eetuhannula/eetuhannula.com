@@ -61,6 +61,7 @@ body {
     border-radius: 100px;
     background-color: $menuItemColor;
 
+    //Position hidden and higher, until revealed
     transform: translateX(-49%) translateY(20%) scale(0);
     transform-origin: center;
     transition: 0.5s;
@@ -126,7 +127,6 @@ body {
     margin: 0.5rem;
     padding: 1rem;
     border-radius: 1.5rem;
-    max-width: 20rem;
     img {
         height: 5rem;
     }
