@@ -17,7 +17,7 @@ async function blinking_() {
 }
 
 // Typewriting text element from element id
-async function typeTextElement(elementID) {
+async function typeTextElementByID(elementID) {
     const text = document.getElementById(elementID).textContent
     let textElement = document.getElementById(elementID)
     let tempText = ""
@@ -44,5 +44,8 @@ async function typeTextElementByClass(elementClass) {
 
 // RUN //
 blinking_()
-typeTextElement('site-location')
-typeTextElementByClass('hellothere')
+typeTextElementByID('site-location')
+
+if (document.querySelector(".hellothere")){
+    typeTextElementByClass('hellothere') 
+}
