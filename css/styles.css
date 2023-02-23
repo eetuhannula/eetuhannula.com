@@ -1,3 +1,27 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #893439;
+  color: #ffffff;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -109,27 +133,6 @@ body {
   background-color: #F0E2C8;
 }
 
-.card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #893439;
-  color: #ffffff;
-  margin: 0.5rem;
-  padding: 1rem;
-  border-radius: 1.5rem;
-}
-.card img {
-  height: 5rem;
-}
-
-.card-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .introduction {
   background-color: #893439;
   margin: 0.5rem;
@@ -141,20 +144,32 @@ body {
   margin: 0 0 0.5rem 0;
 }
 
+.webdev-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 .webdev-icons img {
   height: 4rem;
   padding: 1rem;
 }
 
+.webdev p {
+  margin-bottom: 0.5rem;
+}
+
 #apache-logo {
   background-color: white;
   border-radius: 1rem;
-  padding: 0.5rem 1rem 0 0.5rem;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
 }
 
-#index-footer {
-  position: absolute;
-  bottom: 0;
+#linode-logo {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.25rem;
+  margin: 0.5rem;
 }
 
 .footer {
@@ -178,4 +193,8 @@ body {
 }
 .footer a:hover {
   color: hotpink;
+}
+
+.contact h3 {
+  margin-bottom: 0.5rem;
 }/*# sourceMappingURL=styles.css.map */

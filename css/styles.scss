@@ -1,5 +1,6 @@
 @import './colors';
 @import './mixin';
+@import './_components';
 
 * {
     margin: 0;
@@ -120,22 +121,6 @@ body {
     background-color: $mainBgColor;
 }
 
-.card {
-    @include flex(center, center, column);
-    background-color: $altBgColor;
-    color: $textLight;
-    margin: 0.5rem;
-    padding: 1rem;
-    border-radius: 1.5rem;
-    img {
-        height: 5rem;
-    }
-}
-
-.card-wrapper {
-    @include flexCenter();
-}
-
 .introduction {
     background-color: $altBgColor;
     margin: 0.5rem;
@@ -149,24 +134,37 @@ body {
 }
 
 .webdev-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     img {
         height: 4rem;
         padding: 1rem;
     }
 }
 
+.webdev {
+    p {
+        margin-bottom: 0.5rem;
+    }
+}
+
 #apache-logo {
     background-color: white;
     border-radius: 1rem;
-    padding: 0.5rem 1rem 0 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+}
+
+#linode-logo {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.25rem;
+    margin: 0.5rem;
 }
 
 
 // FOOTER
-#index-footer {
-    position: absolute;
-    bottom: 0;
-}
 
 .footer {
     @include flex(center, center, row);
@@ -188,5 +186,11 @@ body {
 
     a:hover {
         color: $textHighlight;
+    }
+}
+
+.contact {
+    h3 {
+        margin-bottom: 0.5rem;
     }
 }

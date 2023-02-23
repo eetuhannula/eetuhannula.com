@@ -1,8 +1,7 @@
-// UTILITIES
+// SLEEP
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
-
 
 // Blinking "_"
 const blink = document.getElementById('blinking_');

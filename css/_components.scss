@@ -1,0 +1,18 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    @include flex(center, center, column);
+    background-color: $altBgColor;
+    color: $textLight;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.items {
+    @include flexCenter();
+    flex-wrap: wrap;
+}
