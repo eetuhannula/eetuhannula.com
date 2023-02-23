@@ -4,7 +4,10 @@
 }
 
 .card {
-    @include flex(center, center, column);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: $altBgColor;
     color: $textLight;
     margin: 0.5rem;
@@ -13,6 +16,8 @@
 }
 
 .items {
-    @include flexCenter();
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }

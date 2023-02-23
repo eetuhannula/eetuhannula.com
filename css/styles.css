@@ -5,9 +5,9 @@
 
 .card {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   background-color: #893439;
   color: #ffffff;
   margin: 0.5rem;
