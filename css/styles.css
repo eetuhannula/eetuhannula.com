@@ -38,7 +38,7 @@ body {
   left: 0;
   margin: 1rem;
   display: flex;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .menu-box {
@@ -47,7 +47,7 @@ body {
   align-items: center;
   width: 3rem;
   height: 3rem;
-  background-color: #131D29;
+  background-color: #252525;
   border-radius: 20px;
   transform: rotate(0deg);
   transition: 1s;
@@ -78,8 +78,7 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 100px;
-  border: solid #ffffff;
-  background-color: #9AADA7;
+  background-color: #000000;
   transform: translateX(-49%) translateY(20%) scale(0);
   transform-origin: center;
   transition: 0.5s;
@@ -90,14 +89,7 @@ body {
   color: #ffffff;
 }
 .menu-items a:hover {
-  color: hotpink;
-}
-
-#aboutPDF {
-  color: #000000;
-}
-#aboutPDF:hover {
-  color: hotpink;
+  color: #ff0000;
 }
 
 .menu-button:checked ~ .menu-items {
@@ -107,13 +99,20 @@ body {
 }
 
 .menu-button:hover ~ .menu-box {
-  transform: rotate(360deg);
+  transform: rotate(360deg) scale(1.1);
   transition: 0.5s;
 }
 
 .menu-button:active ~ .menu-box {
   transform: rotate(360deg) scale(0.9);
   transition: 0.3s;
+}
+
+#aboutPDF {
+  color: #000000;
+}
+#aboutPDF:hover {
+  color: #ff0000;
 }
 
 .header {
@@ -125,6 +124,7 @@ body {
 }
 .header h1 {
   font-size: 1.5rem;
+  color: #000000;
 }
 
 .content {
@@ -187,7 +187,7 @@ body {
   border-radius: 0.5rem;
 }
 .footer a:hover {
-  color: hotpink;
+  color: #ff0000;
 }
 
 .contact h3 {
