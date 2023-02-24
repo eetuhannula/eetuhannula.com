@@ -1,0 +1,81 @@
+// MENU
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+    display: flex;
+    font-size: 1.25rem;
+}
+
+.menu-box {
+    @include flexCenter();
+    width: 3rem;
+    height: 3rem;
+
+    background-color: $menuBgColor;
+    border-radius: 20px;
+
+    transform: rotate(0deg);
+    transition: 1s;
+}
+
+.menu-icon {
+    /* Coloring svg icon with filter */
+    height: 4rem;
+    filter: invert(100%) sepia(3%) saturate(10%) hue-rotate(313deg) brightness(103%) contrast(103%);
+}
+
+.menu-button {
+    position:absolute; 
+    margin: 0;
+    padding: 0;
+    width: 3rem;
+    height: 3rem;
+    left: 0;
+    z-index: 1;
+    opacity: 0 ;
+    cursor: pointer;
+}
+
+.menu-items {
+    padding: 1rem;
+    width: auto;
+    opacity: 1;
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 100px;
+    background-color: $menuItemColor;
+
+    //Position hidden and higher, until revealed
+    transform: translateX(-49%) translateY(20%) scale(0);
+    transform-origin: center;
+    transition: 0.5s;
+
+    a {
+        margin: 0 5px;
+        text-decoration: none;
+        color: $textLight;
+        &:hover {
+            color: $textHighlight;
+        }
+    }
+
+    
+}
+
+// MENU BUTTON CLICKED -> MENU ITEMS APPEAR
+.menu-button:checked ~ .menu-items{
+    transform: translateX(0.5rem) translateY(50%) scale(1);
+    border-radius: 0 20px 20px 20px;
+    opacity: 1;
+}
+.menu-button:hover ~ .menu-box {
+    transform: rotate(360deg) scale(1.1);
+    transition: 0.5s;
+}
+.menu-button:active ~ .menu-box {
+    transform: rotate(360deg) scale(0.9);
+    transition: 0.3s;
+}
