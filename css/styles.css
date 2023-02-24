@@ -144,19 +144,12 @@ body {
   margin: 0 0 0.5rem 0;
 }
 
-.webdev-icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.webdev-icons img {
-  height: 4rem;
-  padding: 1rem;
-}
-
 .webdev p {
   margin-bottom: 0.5rem;
+}
+.webdev img {
+  height: 4rem;
+  padding: 1rem;
 }
 
 #apache-logo {

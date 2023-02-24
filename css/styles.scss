@@ -117,7 +117,9 @@ body {
 
 // CONTENT
 .content {
-    @include flexCenter();
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $mainBgColor;
 }
 
@@ -133,20 +135,14 @@ body {
     }
 }
 
-.webdev-icons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    img {
-        height: 4rem;
-        padding: 1rem;
-    }
-}
-
 .webdev {
     p {
         margin-bottom: 0.5rem;
+    }
+
+    img {
+        height: 4rem;
+        padding: 1rem;
     }
 }
 
