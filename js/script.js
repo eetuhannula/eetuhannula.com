@@ -21,6 +21,9 @@ async function typeTextElementByID(elementID) {
     let textElement = document.getElementById(elementID)
     let tempText = ""
 
+    textElement.innerHTML = tempText
+    await sleep(300)
+
     for(let i in text){
         tempText += text[i]
         textElement.innerHTML = tempText
@@ -45,6 +48,6 @@ async function typeTextElementByClass(elementClass) {
 blinking_()
 typeTextElementByID('site-location')
 
-if (document.querySelector(".hellothere")){
-    typeTextElementByClass('hellothere') 
+if (document.querySelector(".typethis")){
+    typeTextElementByClass('typethis') 
 }
