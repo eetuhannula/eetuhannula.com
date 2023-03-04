@@ -3,22 +3,25 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    //align-items: center;
+    gap: 0.5rem;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    //justify-content: center;
-    //align-items: center;
     background-color: $altBgColor;
     color: $textLight;
-    margin: 0.5rem;
     padding: 2rem;
     border-radius: 0.25rem;
 
-    //Use with flex direction row
     max-width: 50rem;
+
+    h1 {
+        margin: 0 0 0.5rem 0; 
+    }
+    p {
+        margin: 0 0 0.5rem 0;
+    }
 
 }
 
