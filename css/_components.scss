@@ -1,20 +1,24 @@
 .cards {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
+    //align-items: center;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    //justify-content: center;
+    //align-items: center;
     background-color: $altBgColor;
     color: $textLight;
     margin: 0.5rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
+    padding: 2rem;
+    border-radius: 0.25rem;
 
-    // max-width: 30rem;
+    //Use with flex direction row
+    max-width: 50rem;
 
 }
 

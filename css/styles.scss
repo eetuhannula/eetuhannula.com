@@ -3,6 +3,7 @@
 @import './menubutton';
 @import './_components';
 
+// CORE 
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +15,19 @@ body {
 }
 
 #aboutPDF {
-    color: $textDark;
+    color: $mainBgColor;
+    &:hover {
+        color: $textHighlight;
+    }
+}
+
+a {
+    &:link {
+        text-decoration: none;
+    }
+    &:visited {
+        color: $textLight;
+    }
     &:hover {
         color: $textHighlight;
     }
@@ -79,6 +92,11 @@ body {
     margin: 0.5rem;
 }
 
+.threejs {
+    a {
+        text-align: center
+    }
+}
 
 // FOOTER
 
@@ -93,7 +111,6 @@ body {
     }
     
     a:link, a:visited {
-        background-color: $altBgColor;
         color: $textLight;
         padding: 0.25rem 0.5rem;
         text-decoration: none;

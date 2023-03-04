@@ -73,19 +73,20 @@
 
 .cards {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: #893439;
   color: #ffffff;
   margin: 0.5rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
+  padding: 2rem;
+  border-radius: 0.25rem;
+  max-width: 50rem;
 }
 
 .items {
@@ -106,9 +107,19 @@ body {
 }
 
 #aboutPDF {
-  color: #000000;
+  color: #F0E2C8;
 }
 #aboutPDF:hover {
+  color: #33ff00;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: #ffffff;
+}
+a:hover {
   color: #33ff00;
 }
 
@@ -164,6 +175,10 @@ body {
   margin: 0.5rem;
 }
 
+.threejs a {
+  text-align: center;
+}
+
 .footer {
   display: flex;
   justify-content: center;
@@ -177,7 +192,6 @@ body {
   color: #ffffff;
 }
 .footer a:link, .footer a:visited {
-  background-color: #893439;
   color: #ffffff;
   padding: 0.25rem 0.5rem;
   text-decoration: none;
