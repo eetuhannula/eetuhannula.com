@@ -36,6 +36,19 @@
   opacity: 0;
   cursor: pointer;
 }
+.menu-button:checked ~ .menu-items {
+  transform: translateX(0.5rem) translateY(50%) scale(1);
+  border-radius: 0 20px 20px 20px;
+  opacity: 1;
+}
+.menu-button:hover ~ .menu-box {
+  transform: rotate(360deg) scale(1.1);
+  transition: 0.5s;
+}
+.menu-button:active ~ .menu-box {
+  transform: rotate(360deg) scale(0.9);
+  transition: 0.3s;
+}
 
 .menu-items {
   padding: 1rem;
@@ -55,23 +68,7 @@
   color: #ffffff;
 }
 .menu-items a:hover {
-  color: #ff0000;
-}
-
-.menu-button:checked ~ .menu-items {
-  transform: translateX(0.5rem) translateY(50%) scale(1);
-  border-radius: 0 20px 20px 20px;
-  opacity: 1;
-}
-
-.menu-button:hover ~ .menu-box {
-  transform: rotate(360deg) scale(1.1);
-  transition: 0.5s;
-}
-
-.menu-button:active ~ .menu-box {
-  transform: rotate(360deg) scale(0.9);
-  transition: 0.3s;
+  color: #33ff00;
 }
 
 .cards {
@@ -112,7 +109,7 @@ body {
   color: #000000;
 }
 #aboutPDF:hover {
-  color: #ff0000;
+  color: #33ff00;
 }
 
 .header {
@@ -187,7 +184,7 @@ body {
   border-radius: 0.5rem;
 }
 .footer a:hover {
-  color: #ff0000;
+  color: #33ff00;
 }
 
 .contact h3 {
