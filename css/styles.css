@@ -152,21 +152,16 @@ a:hover {
   background-color: #F0E2C8;
 }
 
-.webdev p {
-  margin-bottom: 0.5rem;
-}
 .webdev img {
   height: 4rem;
   padding: 1rem;
 }
-
-#apache-logo {
+.webdev #apache-logo {
   background-color: white;
   border-radius: 1rem;
   padding: 0.5rem 1rem 0.5rem 0.5rem;
 }
-
-#linode-logo {
+.webdev #linode-logo {
   background-color: white;
   border-radius: 1rem;
   padding: 0.25rem;
