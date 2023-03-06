@@ -13,14 +13,13 @@
   align-items: center;
   width: 3rem;
   height: 3rem;
-  background-color: #252525;
+  background-color: #da4716;
   border-radius: 20px;
   transform: rotate(0deg);
   transition: 1s;
 }
 
 .menu-icon {
-  /* Coloring svg icon with filter */
   height: 4rem;
   filter: invert(100%) sepia(3%) saturate(10%) hue-rotate(313deg) brightness(103%) contrast(103%);
 }
@@ -57,7 +56,7 @@
   display: flex;
   flex-direction: column;
   border-radius: 100px;
-  background-color: #252525;
+  background-color: #303030;
   transform: translateX(-49%) translateY(20%) scale(0);
   transform-origin: center;
   transition: 0.5s;
@@ -65,7 +64,7 @@
 .menu-items a {
   margin: 0 5px;
   text-decoration: none;
-  color: #ffffff;
+  color: #fee4c0;
 }
 .menu-items a:hover {
   color: #33ff00;
@@ -82,14 +81,15 @@
 .card {
   display: flex;
   flex-direction: column;
-  background-color: #893439;
-  color: #ffffff;
+  background-color: #25373f;
+  color: #fee4c0;
   padding: 2rem;
   border-radius: 0.25rem;
   max-width: 50rem;
 }
 .card h1 {
   margin: 0 0 0.5rem 0;
+  color: #e68160;
 }
 .card p {
   margin: 0 0 0.5rem 0;
@@ -109,11 +109,11 @@
 }
 
 body {
-  background-color: #F0E2C8;
+  background-color: #1f1f1f;
 }
 
 #aboutPDF {
-  color: #F0E2C8;
+  color: #1f1f1f;
 }
 #aboutPDF:hover {
   color: #33ff00;
@@ -123,10 +123,10 @@ a {
   text-decoration: none;
 }
 a:link {
-  color: #ffffff;
+  color: #fee4c0;
 }
 a:visited {
-  color: #ffffff;
+  color: #fee4c0;
 }
 a:hover {
   color: #33ff00;
@@ -137,11 +137,11 @@ a:hover {
   align-items: center;
   height: 5rem;
   padding-left: 5rem;
-  background-color: #F0E2C8;
+  background-color: #1f1f1f;
 }
 .header h1 {
   font-size: 1.5rem;
-  color: #000000;
+  color: #ffffff;
 }
 
 .content {
@@ -149,7 +149,8 @@ a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #F0E2C8;
+  padding: 0 0.5rem 0 0.5rem;
+  background-color: #1f1f1f;
 }
 
 .webdev img {
@@ -177,7 +178,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  background-color: #F0E2C8;
+  background-color: #1f1f1f;
   padding-top: 0.5rem;
 }
 
@@ -185,8 +186,11 @@ a:hover {
   margin-bottom: 0.5rem;
   text-align: center;
   padding: 0;
-  color: #ffffff;
+  color: #e68160;
 }
 .contact a {
   margin: 0 0 0.5rem 0.5rem;
+}
+.contact p {
+  color: #e68160;
 }/*# sourceMappingURL=styles.css.map */

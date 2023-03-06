@@ -1,14 +1,62 @@
-// MENU BUTTON CLICKED -> MENU ITEMS APPEAR
-.menu-button:checked ~ .menu-items{
-    transform: translateX(0.5rem) translateY(50%) scale(1);
-    border-radius: 0 20px 20px 20px;
-    opacity: 1;
-}
-.menu-button:hover ~ .menu-box {
-    transform: rotate(360deg) scale(1.1);
-    transition: 0.5s;
-}
-.menu-button:active ~ .menu-box {
-    transform: rotate(360deg) scale(0.9);
-    transition: 0.3s;
-}
+THEME 1
+// Base colors
+$textLight : #ffffff;
+$textDark : #000000;
+$textHighlight : #33ff00;
+$mainBgColor : #F0E2C8;
+$altBgColor : #893439;
+
+// Specifics
+$consoleText : #33ff00;
+
+// Colors for on click menu button and menu items
+$menuBgColor : #252525;
+$menuItemColor : #252525;
+
+THEME 2
+// Base colors
+$textLight : #cfcfcf;
+$textDark : #000000;
+$textTitle: #d5a431;
+$textHighlight : #d5a431;
+$mainBgColor : #7e9e91 ;
+$altBgColor : #393534;
+
+// Specifics
+$consoleText : #33ff00;
+
+// Colors for on click menu button and menu items
+$menuBgColor : #252525;
+$menuItemColor : #252525;
+
+THEME 3
+// Base colors
+$textLight : #a7eaea;
+$textDark : #ffffff;
+$textTitle: #e68160;
+$textHighlight : #33ff00;
+$mainBgColor : #255e74;
+$altBgColor : #25373f;
+
+// Specifics
+$consoleText : #33ff00;
+
+// Colors for on click menu button and menu items
+$menuBgColor : #252525;
+$menuItemColor : #252525;
+
+THEME 4 (CURRENT)
+// Base colors
+$textLight : #fee4c0;
+$textDark : #ffffff;
+$textTitle: #e68160;
+$textHighlight : #33ff00;
+$mainBgColor : #1f1f1f;
+$altBgColor : #25373f;
+
+// Specifics
+$consoleText : #33ff00;
+
+// Colors for on click menu button and menu items
+$menuBgColor : #da4716;
+$menuItemColor : #303030;
