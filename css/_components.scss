@@ -30,11 +30,7 @@
         color: $textSecondary;
     }
 
-}
-
-.items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    .card-item {
+        margin: 0 0 0.5rem 0;
+    }
 }

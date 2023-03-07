@@ -98,12 +98,8 @@
   margin: 0 0 0.5rem 0;
   color: #fee4c0;
 }
-
-.items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+.card .card-item {
+  margin: 0 0 0.5rem 0;
 }
 
 * {
@@ -173,7 +169,7 @@ a:hover {
   margin: 0.5rem;
 }
 
-.threejs a {
+.smallprojects a {
   text-align: center;
 }
 
@@ -204,4 +200,10 @@ a:hover {
 }
 .contact p {
   color: #e68160;
+}
+.contact .contact-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=styles.css.map */

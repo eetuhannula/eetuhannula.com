@@ -1,5 +1,5 @@
-@import './colors';
 @import './mixin';
+@import './colors';
 @import './menubutton';
 @import './_components';
 
@@ -83,10 +83,8 @@ a {
     }
 }
 
-.threejs {
-    a {
-        text-align: center
-    }
+.smallprojects a {
+    text-align: center;
 }
 
 .github {
@@ -99,7 +97,6 @@ a {
 }
 
 // FOOTER
-
 .footer {
     @include flex(center, center, row);
     background-color: $mainBgColor;
@@ -120,5 +117,12 @@ a {
     
     p {
         color: $textMain;
+    }
+    
+    .contact-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
 }
