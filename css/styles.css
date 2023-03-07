@@ -101,6 +101,12 @@
 .card .card-item {
   margin: 0 0 0.5rem 0;
 }
+.card .center-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
 * {
   margin: 0;
