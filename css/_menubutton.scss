@@ -13,8 +13,8 @@
     width: 3rem;
     height: 3rem;
 
-    background-color: $menuButtonColor;
     border-radius: 20px;
+    background-color: $menuButtonColor;
 
     transform: rotate(0deg);
     transition: 1s;
@@ -24,7 +24,7 @@
     height: 4rem;
     
     // White icon filter:
-    filter: invert(100%) sepia(3%) saturate(10%) hue-rotate(313deg) brightness(103%) contrast(103%);
+    //filter: invert(100%) sepia(3%) saturate(10%) hue-rotate(313deg) brightness(103%) contrast(103%);
 
     // Console green color filter: 
     //filter: invert(53%) sepia(95%) saturate(499%) hue-rotate(63deg) brightness(112%) contrast(121%);
@@ -65,7 +65,7 @@
 
     display: flex;
     flex-direction: column;
-    border: solid 2px $textTitle;
+    border: solid 2px $textMain;
     border-radius: 100px;
     background-color: $menuItemsColor;
 
@@ -78,7 +78,7 @@
     a {
         margin: 0 5px;
         text-decoration: none;
-        color: $textTitle;
+        color: $textMain;
         &:hover {
             color: $textHighlight;
         }

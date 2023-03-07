@@ -13,15 +13,14 @@
   align-items: center;
   width: 3rem;
   height: 3rem;
-  background-color: #da4716;
   border-radius: 20px;
+  background-color: #e67b58;
   transform: rotate(0deg);
   transition: 1s;
 }
 
 .menu-icon {
   height: 4rem;
-  filter: invert(100%) sepia(3%) saturate(10%) hue-rotate(313deg) brightness(103%) contrast(103%);
 }
 
 .menu-button {
@@ -57,7 +56,7 @@
   flex-direction: column;
   border: solid 2px #e68160;
   border-radius: 100px;
-  background-color: #303030;
+  background-color: #1f1f1f;
   transform: translateX(-49%) translateY(20%) scale(0);
   transform-origin: center;
   transition: 0.5s;
@@ -83,7 +82,6 @@
   display: flex;
   flex-direction: column;
   background-color: #25373f;
-  color: #fee4c0;
   padding: 2rem;
   border-radius: 0.25rem;
   max-width: 50rem;
@@ -94,6 +92,7 @@
 }
 .card p {
   margin: 0 0 0.5rem 0;
+  color: #fee4c0;
 }
 
 .items {
@@ -113,18 +112,19 @@ body {
   background-color: #1f1f1f;
 }
 
-#aboutPDF {
-  color: #1f1f1f;
-}
-#aboutPDF:hover {
-  color: #33ff00;
-}
-
 a {
   text-decoration: none;
   color: #fee4c0;
 }
 a:hover {
+  color: #33ff00;
+}
+
+#aboutPDF {
+  color: #33ff00;
+}
+#aboutPDF:hover {
+  text-decoration: underline;
   color: #33ff00;
 }
 
@@ -137,7 +137,7 @@ a:hover {
 }
 .header h1 {
   font-size: 1.5rem;
-  color: #ffffff;
+  color: #fee4c0;
 }
 
 .content {
@@ -171,6 +171,13 @@ a:hover {
 
 .threejs a {
   text-align: center;
+}
+
+.github a {
+  color: #e68160;
+}
+.github a:hover {
+  color: #33ff00;
 }
 
 .footer {

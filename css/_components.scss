@@ -10,18 +10,18 @@
     display: flex;
     flex-direction: column;
     background-color: $altBgColor;
-    color: $textLight;
     padding: 2rem;
     border-radius: 0.25rem;
-
+    
     max-width: 50rem;
-
+    
     h1 {
         margin: 0 0 0.5rem 0; 
-        color: $textTitle;
+        color: $textMain;
     }
     p {
         margin: 0 0 0.5rem 0;
+        color: $textSecondary;
     }
 
 }
