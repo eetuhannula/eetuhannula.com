@@ -23,13 +23,8 @@ body {
 
 a {
     text-decoration: none;
-    
-    &:link {
-        color: $textLight;
-    }
-    &:visited {
-        color: $textLight;
-    }
+    color: $textLight;
+
     &:hover {
         color: $textHighlight;
     }
@@ -57,6 +52,13 @@ a {
     flex-direction: column;
     padding: 0 0.5rem 0 0.5rem;
     background-color: $mainBgColor;
+}
+
+.greeting {
+    
+    h1 {
+        margin: 0;
+    }
 }
 
 .webdev {
@@ -90,7 +92,7 @@ a {
 .footer {
     @include flex(center, center, row);
     background-color: $mainBgColor;
-    padding-top: 0.5rem;
+    padding: 0.5rem 0.5rem 0 0.5rem;
 }
 
 .contact {

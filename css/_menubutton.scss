@@ -13,7 +13,7 @@
     width: 3rem;
     height: 3rem;
 
-    background-color: $menuBgColor;
+    background-color: $menuButtonColor;
     border-radius: 20px;
 
     transform: rotate(0deg);
@@ -65,8 +65,10 @@
 
     display: flex;
     flex-direction: column;
+    border: solid 2px $textTitle;
     border-radius: 100px;
-    background-color: $menuItemColor;
+    background-color: $menuItemsColor;
+
 
     //Position hidden and higher, until revealed
     transform: translateX(-49%) translateY(20%) scale(0);
@@ -76,7 +78,7 @@
     a {
         margin: 0 5px;
         text-decoration: none;
-        color: $textLight;
+        color: $textTitle;
         &:hover {
             color: $textHighlight;
         }
