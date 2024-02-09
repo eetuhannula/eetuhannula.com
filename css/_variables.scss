@@ -1,0 +1,35 @@
+// Text Colors
+$text1: #d7ba7d;
+$text2: #ce9178;
+$textNavItem: #d7ba7d;
+$textParagraphDark: #343434;
+$textParagraphLight: #cccccc;
+$textHighlight : hsl(120, 100%, 50%);
+
+//Background Colors
+$bgColor1 : rgb(31, 31, 31);         
+$bgColor2 : rgb(24, 24, 24);          
+
+// Menu Colors
+$menuButtonColor :hsl(0, 39%, 53%);     // Button background (icon is by svg, can be changed with filter)
+$menuBgColor : hsl(0, 76%, 60%);        // Pop-in menu background color
+
+
+// Fonts
+$fontMain : system-ui, sans-serif;
+$fontTypewriter : system-ui, sans-serif;
+
+// Element sizing
+$navbarWidth: 12rem;
+$navbarHeightMobile: 4rem;
+$scrollbarHeight: 10px;
+$scrollbarWidth: 10px;
+
+
+// Breakpoints
+$breakpointTablet: 800px;
+$breakpointPhone: 400px;
+
+// Palette : 
+// #2e4d49 #faa252 #dbd0b3 #00c1a7
+//

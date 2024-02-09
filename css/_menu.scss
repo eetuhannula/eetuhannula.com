@@ -1,0 +1,105 @@
+// MENU
+#hud-system{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
+
+    z-index: 10;
+    display: flex;
+
+    background-color: white; //testing
+
+    
+}
+
+.switch-visuals {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+
+    border-radius: 20px;
+    background-color: #d7ba7d;
+
+    transform: rotate(0deg);
+    transition: 1s;
+
+    z-index: 1;
+    
+    .menu-icon {
+        height: 4rem;
+        // SVG Icon color with filter:
+        //filter: invert(100%) sepia(3%) saturate(10%) hue-rotate(313deg) brightness(103%) contrast(103%);
+
+    }
+
+    @media (max-width: $breakpointTablet) {
+        left: unset;
+        right: 1rem;
+    }
+}
+
+.switch-checkbox {
+    position:fixed;
+    top: 1rem; 
+    left: 1rem;
+    padding: 0;
+    width: 3rem;
+    height: 3rem;
+    z-index: 2;
+    opacity: 0 ;
+    cursor: pointer;
+
+    // APPEARING MENU ON CLICK
+    &:checked ~ .overlay-screen{
+        transform: translateX(0) translateY(0) scale(1);
+    }
+    // MENU BUTTON ANIMATION
+    &:hover ~ .switch-visuals {
+        transform: rotate(360deg) scale(1.1);
+        transition: 0.5s;
+    }
+    &:active ~ .switch-visuals {
+        transform: rotate(360deg) scale(0.9);
+        transition: 0.3s;
+    }
+    
+    @media (max-width: $breakpointTablet) {
+        left: unset;
+        right: 1rem;
+    }
+}
+
+.overlay-screen {
+    position: fixed;
+    backdrop-filter: blur(10px);
+    background-color: rgba(59, 59, 59, 0.434);
+    //position before click
+    transform: translateX(-50%) translateY(-50%) scale(0);
+    transform-origin: center;
+    transition: 0.5s;
+    
+    .screen-content {
+        width: 100vw;
+        height: 100vh;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+
+        margin: 0;
+        padding: 0;
+        //border: solid 1px #ce9178;
+        
+    }
+
+}
