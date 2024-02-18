@@ -89,6 +89,7 @@ a {
 @media (max-width: 800px) {
   .knowledge-content .skill-category .skillboxes img {
     padding: 0.25rem;
+    height: 3.5rem;
   }
 }
 
