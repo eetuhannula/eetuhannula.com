@@ -58,46 +58,29 @@
                 display: flex;
                 flex-flow: column wrap;
                 gap: 0.5rem;
-
-                h3 {
-                    color: $text1;
-                    font-weight: 500;
-                }
-
-                p{
-                    color: $textParagraphLight;
-                }
-
-                .skill-icons {
-                    @media (max-width: $breakpointTablet) {
-                        #scss-logo {
-                            background-color: white;
-                            border-radius: 50%;
-                            padding: 0;
-                            margin: 0.25rem;
-                        }
-
-                        #express-logo{
-                            margin: auto;
-                            padding: 0.5rem;
-                            margin: 0.35rem;
-                            background-color: white;
-                            border-radius: 5px;
-                            max-height: 1.5rem;
-                        }
-                       
-                        img {
-                            max-height: 3rem;
-                            padding: 0.25rem;
-                        }
-                    } 
-                }
-
-                img {
-                    padding: 1rem;
-                    height: 4rem;                    
-                }  
             }
+
+            h3 {
+                color: $text1;
+                font-weight: 500;
+            }
+
+            p{
+                color: $textParagraphLight;
+            }
+
+            img {
+                padding: 0.5rem;
+                height: 4rem;  
+                filter: invert(100%) sepia(1%) saturate(342%) hue-rotate(198deg) brightness(118%) contrast(100%);              
+            }
+
+            @media (max-width: $breakpointTablet) {   
+                img {
+                    padding: 0.25rem;
+                }
+            } 
+            
         }
     }
 }
