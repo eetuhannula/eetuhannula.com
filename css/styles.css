@@ -94,8 +94,7 @@ a {
 }
 
 .about-me {
-  padding: 0 4rem;
-  max-width: 70%;
+  padding: 0 4rem 2rem 4rem;
   display: flex;
   flex-direction: column;
 }
@@ -104,15 +103,31 @@ a {
 }
 @media (max-width: 800px) {
   .about-me {
-    max-width: unset;
-    padding: 0 2rem 5rem 2rem;
+    padding: 0 2rem 2rem 2rem;
   }
 }
 .about-me #aboutPDF {
-  color: hsl(117, 75%, 40%);
+  color: #d7ba7d;
 }
 .about-me #aboutPDF:hover {
   text-decoration: underline;
+}
+.about-me .items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  align-items: center;
+}
+.about-me .text-block {
+  max-width: 40rem;
+}
+.about-me .img-container {
+  max-width: 40rem;
+}
+.about-me img {
+  width: calc(100% - 4px);
+  border: solid 2px #d7ba7d;
+  border-radius: 5px;
 }
 
 #contact {
@@ -306,6 +321,9 @@ nav a {
   font-size: 1.5rem;
   font-weight: 400;
 }
+nav a:hover {
+  font-weight: 600;
+}
 @media (max-width: 800px) {
   nav {
     top: unset;
@@ -333,7 +351,7 @@ main {
   flex-direction: row;
   height: 100vh;
   width: calc(100vw - 12rem);
-  overflow: auto;
+  overflow: hidden;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }

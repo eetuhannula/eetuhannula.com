@@ -89,27 +89,45 @@
 
 
 .about-me {
-    padding: 0 4rem;
-    max-width: 70%;
-
+    padding: 0 4rem 2rem 4rem;
     display: flex;
     flex-direction: column;
 
-    
     p {
         padding-bottom: 0.5rem;
     }
 
     @media (max-width: 800px) {
-        max-width: unset;
-        padding: 0 2rem 5rem 2rem;
+        //max-width: unset;
+        padding: 0 2rem 2rem 2rem;
     }
     
     #aboutPDF {
-        color: hsl(117, 75%, 40%);
+        color: $textNavItem;
         &:hover {
             text-decoration: underline;
         }
+    }
+
+    .items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .text-block {
+        max-width: 40rem;
+    }
+
+    .img-container {
+        max-width: 40rem;
+    }
+
+    img {
+        width: calc(100% - 4px);
+        border: solid 2px $textNavItem;
+        border-radius: 5px;
     }
 }
 

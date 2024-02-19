@@ -2,6 +2,7 @@
 @import './text-elements';
 @import './page-content';
 @import './menu';
+
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +21,6 @@
 
 ::-webkit-scrollbar-thumb {
     background: #b5cea8; 
-    //border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -55,6 +55,9 @@ nav {
         font-size: 1.5rem;
         font-weight: 400;
 
+        &:hover {
+            font-weight: 600;
+        }
     }
 
     @media (max-width: $breakpointTablet) {
@@ -89,7 +92,7 @@ main {
     height: 100vh;
     width: calc(100vw - $navbarWidth);
     
-    overflow: auto; // affects horizontal scrolling on page view: "auto" = enable , "hidden" = disable
+    overflow: hidden; // affects horizontal scrolling on page view: "auto" = enable , "hidden" = disable
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
 
