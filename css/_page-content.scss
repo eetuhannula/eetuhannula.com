@@ -152,6 +152,13 @@
     }
 }
 
+
+.li-contact {
+    display: none;
+    @media (max-width: 800px) {
+        display: block;
+    }
+}
 .contact-content {
     display: flex;
     flex-direction: column;
